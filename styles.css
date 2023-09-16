@@ -426,7 +426,7 @@ a{
 
   .btn-grp{
     display:flex;
-    gap:0.9rem;
+    gap:3%;
     align-items:center;
   }
 
@@ -466,6 +466,7 @@ a{
   }
 
   @media (max-width:1300px) {
+
     .page-header {
       padding-top: 30px;
       color: var(--bgOrange);
