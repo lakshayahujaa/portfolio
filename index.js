@@ -12,8 +12,10 @@ var typeData = new Typed(".role", {
   });
  function sendemail(){
     Email.send({
-        SecureToken: "f4026ab7-c61c-42ee-b02d-de2adeec3dc9",
-        To : 'lakshayahuja210703@gmail.com',
+        Host : "smtp.elasticemail.com",
+        Username : "lakshayahuja210703@gmail.com",
+        Password : "D60B2CDE91A2654C01B143BB35664FEF7A2A",
+        To : "lakshayahuja210703@gmail.com",
         From : document.getElementById("email").value,
         Subject : document.getElementById("subject").value,
         Body : "Name:" + document.getElementById("name").value

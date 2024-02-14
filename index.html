@@ -173,9 +173,10 @@
             
             <div class="contactus-form-container">
               
-              <form class="form"  id="formdata" onsubmit="sendemail(); reset(); return false;">
+              <form class="form" action="https://api.web3forms.com/submit" method="post" id="formdata">
                 <div class="formfield-container">
                   <h1 class="contactus-heading">Contact Me</h1>
+                  <input type="hidden" name="access_key" value="d88326d0-f87f-4eb7-82b0-d330fa8f0fba">
                   <input class="formfield" 
                   type="text" 
                   name="name" 
