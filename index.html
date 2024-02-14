@@ -168,42 +168,34 @@
         </div>
 
         <div class="contactus-form-container" id="contactme">
+          
           <div class="container">
-
-            <h1 class="contactus-heading">Contact me</h1>
-
-            <h3 class="contactus-sub-heading">
-              Phone: <a href="tel:7838494209">+91-7838494209</a>
-              <br>
-              Email: <a href="mailto:lakshayahuja210703@gmail.com">lakshayahuja210703@gmail.com</a>
-              <br>
-              linkedin: <a href="https://www.linkedin.com/in/lakshayahujaa/">lakshayahujaa</a>
-            </h3>
-
-
-            <!-- <div class="contactus-form-container">
-              <form class="form" action="">
+            
+            <div class="contactus-form-container">
+              
+              <form class="form"  id="formdata" onsubmit="sendemail(); reset(); return false;">
                 <div class="formfield-container">
+                  <h1 class="contactus-heading">Contact Me</h1>
                   <input class="formfield" 
                   type="text" 
                   name="name" 
-                  id="" 
+                  id="name" 
                   placeholder="Enter your name" />
 
                   <input class="formfield" 
                   type="email" 
                   name="email" 
-                  id="" 
+                  id="email" 
                   placeholder="Enter your email address" />
 
                   <input class="formfield" 
                   type="text" 
                   name="subject" 
-                  id="" 
+                  id="subject" 
                   placeholder="Enter your subject" />
 
                   <textarea name="message" 
-                  id="" cols="30" rows="10" 
+                  id="message" cols="30" rows="10" 
                   class="formfield formfield-textarea"
                   placeholder="Enter your message"></textarea>
 
@@ -215,14 +207,10 @@
                   </button>
                 </div>
 
-              </form> -->
-
+              </form>
             </div>
-
-
           </div>
         </div>
-
         <footer>
           <div class="container">
             <div class="footer-wrapper">
@@ -251,22 +239,12 @@
           </div>
         </footer>
 
+        
+
     </div>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
-  <script>
-    var typeData = new Typed(".role", {
-      strings: [
-        "Frontend Developer",
-        "Web Developer",
-        "UI-UX Designer",
-        "Coder",
-      ],
-      loop: true,
-      typeSpeed: 100,
-      backSpeed: 80,
-      backDelay: 1000,
-    });
-  </script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
