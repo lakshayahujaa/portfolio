@@ -812,3 +812,16 @@ footer{
     align-items: center;
   }
 }
+
+::-webkit-scrollbar{
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color: rgba(128, 128, 128, 0.437);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #4462f59e;
+  border-radius: 10%;
+}
