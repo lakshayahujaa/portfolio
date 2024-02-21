@@ -39,6 +39,8 @@
     display:flex;
     justify-content: baseline;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .logo-text{
@@ -51,6 +53,8 @@
     display:flex;
     gap:2rem;
     padding: 0 4em;
+    position: relative;
+    z-index: 2;
 }
 
 .nav-items div{
@@ -824,4 +828,8 @@ footer{
 ::-webkit-scrollbar-thumb{
   background-color: #4462f59e;
   border-radius: 10%;
+}
+
+.nav-contact{
+  text-align: center;
 }
