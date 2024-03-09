@@ -163,8 +163,9 @@ a{
     transform: scaleX(1);
   }
   .btn-pink:hover {
-    border: solid 3px var(--bgOrange);
+    border: 1px solid var(--bgOrange);
     color: black;
+    scale: 1.2;
   }
 
   .hero-section-right{
@@ -738,6 +739,11 @@ footer{
   .hero-section{
     display: flex;
     flex-direction: column-reverse;
+  }
+  .hero-section-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .user-image{
     animation: none;
