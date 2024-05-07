@@ -21,3 +21,29 @@ function toProject(){
 }
 
 project.onclick = toProject;
+
+function toggleTheme() {
+  const body = document.body;
+  body.classList.toggle('dark-theme');
+
+  // Update button text based on theme
+  const themeBtn = document.getElementById('theme-toggle-btn');
+  if (body.classList.contains('dark-theme')) {
+      themeBtn.textContent = 'Light Mode';
+  } else {
+      themeBtn.textContent = 'Dark Mode';
+  }
+}
+
+// Check for user's preferred theme on page load
+window.onload = function() {
+  const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const body = document.body;
+  
+
+  // Apply dark mode if user's preferred theme is dark
+  if (prefersDarkMode) {
+      body.classList.add('dark-theme');
+      document.getElementById('theme-toggle-btn').textContent = 'Light Mode';
+  }
+};
