@@ -16,7 +16,9 @@
     overflow-y:auto;
     overflow-x: hidden;
 }
-
+.bi:hover{
+  color: var(--bgOrange);
+}
 .container{
     width:1200px;
     margin:0 auto;
@@ -51,6 +53,7 @@
 
 .nav-items{
     display:flex;
+    text-align: center;
     gap:2rem;
     padding: 0 4em;
     position: relative;
@@ -776,11 +779,13 @@ footer{
   .skill-container-right{
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 30% 30% 30%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
     grid-template-areas: 
     "html css js"
     "tw c cpp"
-    "git jv .";
+    "git jv bs"
+    "rc njs dc"
+    "gt md ex";
   }
   #html{
     grid-area: html;
@@ -805,6 +810,27 @@ footer{
   }
   #java{
     grid-area: jv;
+  }
+  #bootstrap{
+    grid-area: bs;
+  }
+  #react{
+    grid-area: rc;
+  }
+  #nodejs{
+    grid-area: njs;
+  }
+  #docker{
+    grid-area: dc;
+  }
+  #git{
+    grid-area: gt;
+  }
+  #mongodb{
+    grid-area: md;
+  }
+  #express{
+    grid-area: ex;
   }
   .skill-fade-text{
     display: none;
