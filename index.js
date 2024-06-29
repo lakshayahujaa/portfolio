@@ -1,6 +1,8 @@
 var typeData = new Typed(".role", {
     strings: [
       "Frontend Developer",
+      "Backend Developer",
+      "Fullstack Developer",
       "Web Developer",
       "UI-UX Designer",
       "Coder",
@@ -29,9 +31,11 @@ function toggleTheme() {
   // Update button text based on theme
   const themeBtn = document.getElementById('theme-toggle-btn');
   if (body.classList.contains('dark-theme')) {
-      themeBtn.textContent = 'Light Mode';
+      themeBtn.textContent = ' Light Mode';
+      themeBtn.className = 'bi bi-brightness-high';
   } else {
-      themeBtn.textContent = 'Dark Mode';
+      themeBtn.textContent = ' Dark Mode';
+      themeBtn.className = 'bi bi-moon-stars';
   }
 }
 
