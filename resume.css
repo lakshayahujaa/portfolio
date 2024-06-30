@@ -302,6 +302,7 @@
     .header{
         display: flex;
         flex-direction: column;
+        padding-bottom: 5%;
     }
     .details{
         margin-left: 80%;
