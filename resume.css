@@ -11,7 +11,6 @@
 }
 .resume-wrapper{
     width: 70%;
-    justify-content: center;
 }
 .header{
     background-color:#343d68;;
@@ -278,4 +277,49 @@
 }
 .download a{
     color: white;
+}
+::-webkit-scrollbar{
+    width: 0.75rem;
+  }
+  
+  ::-webkit-scrollbar-track{
+    background-color: rgba(128, 128, 128, 0.437);
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background-color: #4462f59e;
+    border-radius: 10%;
+  }
+@media(max-width: 700px){
+    .wrapper{
+        overflow-x: hidden;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .resume-wrapper{
+        width: 100%;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .details{
+        margin-left: 80%;
+    }
+    .header h1{
+        font-size: 2em;
+    }
+    .header h2{
+        font-size: 1.5em;
+    }
+    .contacts-div a{
+        font-size: 1em;
+        display: flex;
+    }
+    .skills-tools{
+        width: 100%;
+    }
+    .download{
+        visibility: hidden;
+    }
 }
